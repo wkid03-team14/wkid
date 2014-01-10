@@ -1,5 +1,6 @@
 body {
         background-color: #EBD1F2;
+    overflow:hidden;
 
 }
 
@@ -15,8 +16,8 @@ main {
     width: 250px;
     font-size: 18px;
     line-height: 30px;
-    top: 100px;
-    left: 100px;
+    top: 5%;
+    left: 10%;
 }
 
 #s1_fond_mur {
@@ -56,9 +57,20 @@ main {
 }
 
 @-webkit-keyframes zora {
-0% {-webkit-transform:translateX(-900px);}
-50%{-webkit-transform:translateX(-350px);}
-100%{-webkit-transform:translateX(0px);}
+0% {
+        -webkit-transform:translateX(-900px);
+
+    }
+    
+50%{
+        -webkit-transform:translateX(-350px);
+
+    }
+    
+100%{
+        -webkit-transform:translateX(0px);
+
+    }
 }
 
 #zora1 {
@@ -82,7 +94,7 @@ main {
 }
 
 @-webkit-keyframes pere {
-0% {-webkit-transform:translateX(900px);}
+0% {-webkit-transform:translateX(1000px);}
 50%{-webkit-transform:translateX(350px);}
 100%{-webkit-transform:translateX(0px);}
 }
@@ -96,7 +108,7 @@ main {
     width: 40%;
     -webkit-animation-name: pere;
     -webkit-animation-duration: 1s;
-    -webkit-animation-delay:.6s;
+    -webkit-animation-delay:.8s;
     -webkit-animation-timing-function: linear;
     -webkit-animation-fill-mode:backwards;
 }
