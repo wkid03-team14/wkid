@@ -1,3 +1,126 @@
+body {
+        background-color: #EBD1F2;
+
+}
+
+main {
+    overflow: hidden;
+}
+
+#text_1 {
+    position:absolute;
+    top: 400px;
+    z-index: 2000;
+    font-family: 'Gabriela', serif;
+    width: 250px;
+    font-size: 18px;
+    line-height: 30px;
+    top: 100px;
+    left: 100px;
+}
+
+#s1_fond_mur {
+    display: block;
+    background-color: #EDDFF2;
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+}
+
+@-webkit-keyframes armoire {
+0% {-webkit-transform:translateY(700px);}
+50%{-webkit-transform:translateY(350px);}
+100%{-webkit-transform:translatey(0px);}
+}
+
+#armoire {
+    z-index: 20;
+    position: absolute;
+    bottom: 67px;
+    left: 50%;
+    margin-left: -15%;
+    width: 50%;
+        
+}
+
+#armoire img {
+    width: 50%;
+    height: 50%;    
+    -webkit-animation-name: armoire;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay:.1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-fill-mode:backwards;
+}
+
+@-webkit-keyframes zora {
+0% {-webkit-transform:translateX(-900px);}
+50%{-webkit-transform:translateX(-350px);}
+100%{-webkit-transform:translateX(0px);}
+}
+
+#zora1 {
+    z-index: 20;
+    position: absolute;
+    bottom: 67px;
+    left: 45%;
+    margin-left: -15%;
+    width: 50%;
+    -webkit-animation-name: zora;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay:.4s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-fill-mode:backwards;
+}
+
+#zora1 img {
+    width: 18%;
+    height: 18%;
+
+}
+
+@-webkit-keyframes pere {
+0% {-webkit-transform:translateX(900px);}
+50%{-webkit-transform:translateX(350px);}
+100%{-webkit-transform:translateX(0px);}
+}
+
+#pere1 {
+    z-index: 20;
+    position: absolute;
+    bottom: 65px;
+    left: 68%;
+    margin-left: -15%;
+    width: 40%;
+    -webkit-animation-name: pere;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay:.6s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-fill-mode:backwards;
+}
+
+#pere1 img {
+    width: 60%;
+    height: 60%;
+
+}
+
+#oranges1 {
+    z-index: 20;
+    position: absolute;
+    top: -15%;
+    left: 16%;
+    width: 60%;
+}
+
+#oranges1 img {
+    width: 30%;
+    height: 30%;
+
+}
+    
 
 
 footer {
@@ -6,6 +129,7 @@ footer {
     background: #733E7C;
     position: absolute;
     bottom: 0;
+    z-index: 9999;
 }
 
 footer h1 {
