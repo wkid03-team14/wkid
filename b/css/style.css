@@ -1,0 +1,21 @@
+
+html, body{
+	width: 100%;
+	height: 100%;
+}
+main {display:block;
+background-image:url(../images/fond.png);
+background-attachment: fixed; 
+background-position:center;  
+background-size:cover;
+position: relative;
+height:95%;
+width:100%;}
+
+footer {background-color: black;
+height:100px;
+width:100%;}
+
+#epicerie {
+display:block;
+width:10%;}
