@@ -1,4 +1,4 @@
-
+/* général*/
 html, body{
 	width: 100%;
 	height: 100%;
@@ -12,6 +12,134 @@ position: relative;
 height:95%;
 width:100%;
 overflow: hidden;}
+
+#index {display:block;
+background-image:url(../images/fond1.png);
+background-attachment: fixed; 
+background-position:center;  
+background-size:cover;
+position: relative;
+height:95%;
+width:100%;
+overflow: hidden;}
+
+.texte {font-family: 'Englebert', sans-serif;
+color:#36444D;
+font-size: 18pt;
+width:300px;
+line-height:1.4;
+position: absolute;
+right:0;
+margin-right:5%;
+margin-top:5%;
+-webkit-animation-name: texte;
+-webkit-animation-duration: 0.5s;
+-webkit-animation-delay:0.35s;
+-webkit-animation-timing-function:linear;
+-webkit-animation-fill-mode:backwards;
+}
+
+@-webkit-keyframes texte {
+0% {-webkit-transform:translateX(350px);}
+50%{-webkit-transform:translateX(100px);}
+100%{-webkit-transform:translateX(0px);}
+}
+
+footer {
+	z-index: 100;
+    width: 100%;
+    height: 70px;
+    background: #A3BECC;
+    position: absolute;
+    bottom: 0;
+}
+
+footer h1 {
+    font-size: 36px;
+    font-family: 'Gabriela', serif;
+    color: white;
+    position: absolute;
+    top: 50%;
+    margin-top: -18px;
+    left: 20px;
+
+}
+
+footer img {
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+}
+/*index*/
+#lit {
+	position: absolute;
+	right:0px;
+	top:45%;
+}
+
+#lit img {float:right;
+-webkit-animation-name: epicerie;
+-webkit-animation-duration: 0.4s;
+-webkit-animation-delay:.1s;
+-webkit-animation-timing-function:linear;
+-webkit-animation-fill-mode:backwards;
+}
+
+@-webkit-keyframes epicerie {
+0% {-webkit-transform:translateX(250px);}
+50%{-webkit-transform:translateX(100px);}
+100%{-webkit-transform:translateX(0px);}
+}
+
+#padre {z-index: 25;
+position: absolute;
+left:-5%;
+-webkit-animation-name: padre;
+-webkit-animation-duration: 0.6s;
+-webkit-animation-delay:.5s;
+-webkit-animation-timing-function:linear;
+-webkit-animation-fill-mode:backwards;
+}
+
+@-webkit-keyframes padre{
+0% {-webkit-transform:translateX(-450px);}
+50%{-webkit-transform:translateX(-200px);}
+100%{-webkit-transform:translateX(0px);}
+}
+
+#orange {position: absolute;
+top:30%;
+left:30%;
+z-index: 15;
+-webkit-animation-name: orange;
+-webkit-animation-duration: 0.6s;
+-webkit-animation-delay:.1s;
+-webkit-animation-timing-function:linear;
+-webkit-animation-fill-mode:backwards;
+}
+
+@-webkit-keyframes orange {
+0% {-webkit-transform:translateX(-450px);}
+50%{-webkit-transform:translateX(-200px);}
+100%{-webkit-transform:translateX(0px);}
+}
+
+#poupon {position: absolute;
+left:95%;
+top:50%;
+-webkit-animation-name: poupon;
+-webkit-animation-duration: 0.4s;
+-webkit-animation-delay:.1s;
+-webkit-animation-timing-function:linear;
+-webkit-animation-fill-mode:backwards;
+}
+
+@-webkit-keyframes poupon {
+0% {-webkit-transform:translateX(250px);}
+50%{-webkit-transform:translateX(100px);}
+100%{-webkit-transform:translateX(0px);}
+}
+/*page2*/
 
 #epicerie {
 	width:40%;
@@ -89,6 +217,8 @@ z-index: 30;
 50%{-webkit-transform:translateY(400px);}
 100%{-webkit-transform:translateY(0px);}
 }
+
+/*page3*/
 
 #poupee1 {position:absolute;
 	bottom:0;
@@ -211,32 +341,11 @@ left:150%;
 100%{-webkit-transform:translateX(-1700px);}
 }
 
-
-.texte {font-family: 'Englebert', sans-serif;
-color:#36444D;
-font-size: 18pt;
-width:300px;
-line-height:1.4;
-position: absolute;
-right:0;
-margin-right:5%;
-margin-top:5%;
--webkit-animation-name: texte;
--webkit-animation-duration: 0.5s;
--webkit-animation-delay:0.35s;
--webkit-animation-timing-function:linear;
--webkit-animation-fill-mode:backwards;
-}
-
-@-webkit-keyframes texte {
-0% {-webkit-transform:translateX(350px);}
-50%{-webkit-transform:translateX(100px);}
-100%{-webkit-transform:translateX(0px);}
-}
-
+/*page4*/
 #papafille{position:absolute;
 	bottom:0%;
 	left:7%;
+	z-index:10;
 
 -webkit-animation-name: papa;
 -webkit-animation-duration: 0.5s;
@@ -253,33 +362,71 @@ margin-top:5%;
 }
 
 
-
-
-
-
-footer {
-	z-index: 100;
-    width: 100%;
-    height: 70px;
-    background: #A3BECC;
-    position: absolute;
-    bottom: 0;
+#yasmine {position: absolute;
+bottom:5%;
+left:53%;
+-webkit-animation-name: yasmine;
+-webkit-animation-duration: 0.5s;
+-webkit-animation-delay:0.35s;
+-webkit-animation-timing-function:linear;
+-webkit-animation-fill-mode:backwards;
+-webkit-animation-fill-mode:both;
 }
 
-footer h1 {
-    font-size: 36px;
-    font-family: 'Gabriela', serif;
-    color: white;
-    position: absolute;
-    top: 50%;
-    margin-top: -18px;
-    left: 20px;
-
+@-webkit-keyframes yasmine {
+0% {-webkit-transform:rotate(Odeg);}
+25%{-webkit-transform:rotate(45deg);}
+50%{-webkit-transform:translateY(100px);}
+100%{-webkit-transform:translateY(200px);}
 }
 
-footer img {
-    position: absolute;
-    bottom: 15px;
-    right: 20px;
+/*page5*/
+#gars {position: absolute;
+top:50%;
+left:40%;
+-webkit-animation-name: gars;
+-webkit-animation-duration: 0.7s;
+-webkit-animation-delay:0.35s;
+-webkit-animation-timing-function:linear;
+-webkit-animation-fill-mode:backwards;
+-webkit-animation-fill-mode:both;
 }
 
+@-webkit-keyframes gars {
+0% {-webkit-transform:translateY(-800px);}
+50%{-webkit-transform:translateY(-400px);}
+100%{-webkit-transform:translateY(0px);}
+}
+
+#pouuupee {position: absolute;
+top:80%;
+left:50%;
+-webkit-animation-name: pouuupee;
+-webkit-animation-duration: 0.9s;
+-webkit-animation-delay:0.45s;
+-webkit-animation-timing-function:linear;
+-webkit-animation-fill-mode:backwards;
+-webkit-animation-fill-mode:both;
+}
+
+@-webkit-keyframes pouuupee {
+0% {-webkit-transform:translateY(-800px);}
+50%{-webkit-transform:translateY(-400px);}
+100%{-webkit-transform:translateY(0px);}
+}
+
+#ombre {position: absolute;
+top:80%;
+-webkit-animation-name: ombre;
+-webkit-animation-duration: 0.8s;
+-webkit-animation-delay:0.5s;
+-webkit-animation-timing-function:linear;
+-webkit-animation-fill-mode:backwards;
+-webkit-animation-fill-mode:both;
+}
+
+@-webkit-keyframes ombre{
+0% {-webkit-transform:translateX(-800px);}
+50%{-webkit-transform:translateX(-400px);}
+100%{-webkit-transform:translateX(0px);}
+}
