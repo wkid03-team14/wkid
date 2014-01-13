@@ -41,15 +41,15 @@ footer img {
     right: 20px;
 }
 
-/*-------------------------------index-------------------------------------------*/
+/*-------------------------------index et des classes utilisées sur la page 2-------------------------------------------*/
 
-#meuble{ position: absolute;
+.meuble{ position: absolute;
     top: 48%;
     right: 10%;
     z-index:8;
     }
 
-#oranges1{
+.oranges{
     position: absolute;
     z-index: 7;
     top:42%;
@@ -61,21 +61,24 @@ footer img {
     top:28%;
     left: 40%;
 }
-#lit1{
+.lit{
     position: absolute;
     top: 41%;
     left: 3%;
+    z-index: 4;
 }
-#ours1{
+.ours{
     position: absolute;
     top: 40%;
     left: 15%;
+    z-index: 5;
 }
 
-#poupee1{
+.poupee{
     position: absolute;
     top: 47.5%;
     left: 25%;
+    z-index:6; 
 }
 
-/*-------------------------------page2-------------------------------------------*/
+/*-------------------------------page2---------------------------------------------*/
