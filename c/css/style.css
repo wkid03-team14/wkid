@@ -4,7 +4,7 @@ html, body{
 	height: 100%;
 }
 
-main {display:block;
+#fond1 {display:block;
 	background-image:url(../images/fond.png);
 	background-attachment: fixed; 
 	background-position:center;  
@@ -14,17 +14,17 @@ main {display:block;
 	width:100%;
 	overflow: hidden;
 }
-#fond{
+#fond2{
 
-    background-image: :url(../images/fond_2.png);
+    background-image:url(../images/fond_2.png);
     background-attachment: fixed; 
     background-position:center;  
     background-size:cover;
-    position: absolute;
+    position: relative;
     height:95%;
     width:100%;
     overflow: hidden;
-    z-index: 1;
+    
 }
 
 footer {
@@ -102,3 +102,13 @@ footer img {
 
 
 /*-------------------------------page3---------------------------------------------*/
+
+#epicier1{
+
+}
+#poupee2{
+
+}
+#fille2{
+
+}
