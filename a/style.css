@@ -1,10 +1,58 @@
 html{ 
 height: 100%; 
+-webkit-transform:translate3D(0,0,0);
 }
 
 body{ 
 height: 100%; 
 }
+/*ANIMATIONS*/
+@-webkit-keyframes maison1 {
+    0% {-webkit-transform:translateX(-200px)}
+    100% {-webkit-transform:translateX(0px)}
+}
+
+@-webkit-keyframes orange1 {
+    0% {-webkit-transform:translateX(200px)}
+    100% {-webkit-transform:translateX(0px)}
+}
+
+
+
+@-webkit-keyframes ville1 {
+    0% {-webkit-transform:translateX(10px)}
+    100% {-webkit-transform:translateX(0px)}
+}
+@-webkit-keyframes ville2 {
+    0% {-webkit-transform:translateX(-10px)}
+    100% {-webkit-transform:translateX(0px)}
+}
+
+@-webkit-keyframes fille2 {
+    0% {-webkit-transform:translateX(-30px)}
+    100% {-webkit-transform:translateX(0px)}
+}
+
+
+
+
+@-webkit-keyframes orange2 {
+    0% {-webkit-transform:translateX(-75px)}
+    100% {-webkit-transform:translateX(0px)}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #ville1 img {
 	position: absolute;
@@ -12,6 +60,8 @@ height: 100%;
 	z-index: 80;
 	width: 100%;
 	pointer-events:none;
+	
+
 }
 
 #fond  {
@@ -36,12 +86,14 @@ height: 100%;
 	right: 0%;
 	z-index: 70;
 	width: 75%;
+	-webkit-animation:ville2 1.5s  ease-out;
 }
 #caisse {
 	width: 100%;
 	position: absolute;
 	bottom: 0%;
-	right: 0%;}
+	right: 0%;
+	-webkit-animation:orange1 1.5s  ease-out;}
 
 #orange {
 	width: 55%;
@@ -58,6 +110,7 @@ height: 100%;
 	right: 29.5%;
 	margin-bottom: 3.1%;
 	z-index: 100;
+	-webkit-animation:orange1 1.5s  ease-out;
 }
 
 
@@ -66,7 +119,8 @@ height: 100%;
 	margin-top:6%;
 	z-index: 50;
 	width: 7%;
-	left: 13%;}
+	left: 13%;
+	 -webkit-animation:maison1 1.4s  ease-out;}
 
 #petitemaison {
 	position: absolute;
@@ -74,6 +128,7 @@ height: 100%;
 	z-index: 55;
 	width: 7%;
 	left: 6.2%;
+	-webkit-animation:maison1 1.5s  ease-out;
 }
 
 
@@ -125,6 +180,7 @@ height: 100%;
 	bottom:0%;
 	left: 10%;
 	z-index: 70;
+	-webkit-animation:fille2 1.5s  ease-out;
 }
 
 #fille {
@@ -150,6 +206,7 @@ height: 100%;
 	top: 5%;
 	left: 5%;
 	width: 10%;
+
 }
 
 #reflet {
@@ -161,6 +218,7 @@ height: 100%;
 	width: 100%;
 	bottom: 0%;
 	pointer-events:none;
+
 }
 
 #orange2{
@@ -169,6 +227,7 @@ height: 100%;
 	right: 5%;
 	bottom: 0%;
 	width: 30%;
+	-webkit-animation:orange2 1.5s  ease-out;
 }
 
 #mur {pointer-events:none;}
@@ -313,6 +372,13 @@ height: 100%;
 
 }
 
+
+#pere4 {
+	position: absolute;
+	right: 20%;
+	bottom:0%;
+	z-index: 90;
+}
 /**----------5----------**/
 
 #murg{
