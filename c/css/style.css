@@ -1,10 +1,11 @@
+/*-------------------------------général-------------------------------------------*/
 html, body{
 	width: 100%;
 	height: 100%;
 }
 
 main {display:block;
-	background-image:url(../images/fond.jpg);
+	background-image:url(../images/fond.png);
 	background-attachment: fixed; 
 	background-position:center;  
 	background-size:cover;
@@ -39,3 +40,42 @@ footer img {
     bottom: 15px;
     right: 20px;
 }
+
+/*-------------------------------index-------------------------------------------*/
+
+#meuble{ position: absolute;
+    top: 48%;
+    right: 10%;
+    z-index:8;
+    }
+
+#oranges1{
+    position: absolute;
+    z-index: 7;
+    top:42%;
+    right: 12.3%;
+}
+#fille1{
+    position: absolute;
+    z-index: 10;
+    top:28%;
+    left: 40%;
+}
+#lit1{
+    position: absolute;
+    top: 41%;
+    left: 3%;
+}
+#ours1{
+    position: absolute;
+    top: 40%;
+    left: 15%;
+}
+
+#poupee1{
+    position: absolute;
+    top: 47.5%;
+    left: 25%;
+}
+
+/*-------------------------------page2-------------------------------------------*/
