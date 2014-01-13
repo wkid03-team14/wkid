@@ -1,0 +1,41 @@
+html, body{
+	width: 100%;
+	height: 100%;
+}
+
+main {display:block;
+	background-image:url(../images/fond.jpg);
+	background-attachment: fixed; 
+	background-position:center;  
+	background-size:cover;
+	position: relative;
+	height:95%;
+	width:100%;
+	overflow: hidden;
+} 
+
+footer {
+	z-index: 100;
+    width: 100%;
+    height: 70px;
+    background: #990000;
+    position: absolute;
+    bottom: 0;
+}
+
+footer h1 {
+    font-size: 36px;
+    font-family: 'Gabriela', serif;
+    color: white;
+    position: absolute;
+    top: 50%;
+    margin-top: -18px;
+    left: 20px;
+
+}
+
+footer img {
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+}
