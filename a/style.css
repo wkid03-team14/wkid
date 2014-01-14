@@ -61,19 +61,22 @@ height: 100%;
 }
 
 @-webkit-keyframes mains {
-    0% {-webkit-transform:scale(0.8) translateX(-100px) translateY(80px)}
-    100% {-webkit-transform:scale(1) translateX(-100px) translateY(80px)}
+    0% {-webkit-transform:scale(0.8) translateX(-100px) translateY(30px)}
+    100% {-webkit-transform:scale(1) translateX(-100px) translateY(30px)}
+}
+
+
+
+@-webkit-keyframes orange5 {
+    0% {-webkit-transform:translateX(0px)}
+    100% {-webkit-transform:translateX(-360px)}
 }
 
 
 
 
 
-
-
-
-
-
+body {overflow: hidden;}
 
 #ville1 img {
 	position: absolute;
@@ -152,10 +155,31 @@ height: 100%;
 	-webkit-animation:maison1 1.5s  ease-out;
 }
 
-
+#ch1{
+	font-family:'Gabriela', serif;
+	width: 35%;
+	line-height: 1.4;
+	z-index: 100;
+	position: absolute;
+	bottom: 0%;
+	bottom: 60px;
+	margin-left: 20px;
+	color: #db7200;
+	font-size: 20px;
+}
 /**----------2----------**/
-
-
+#ch2 {
+	font-family:'Gabriela', serif;
+	width: 100%;
+	line-height: 1.4;
+	z-index: 100;
+	position: absolute;
+	bottom: 0%;
+	bottom: 60px;
+	margin-left: 20px;
+	color: #db7200;
+	font-size: 20px;
+}
 
 #middle {
 	position: absolute;
@@ -273,7 +297,19 @@ height: 100%;
 
 /**----------3----------**/
 
-
+#ch3 {
+	font-family:'Gabriela', serif;
+	width: 40%;
+	line-height: 1.4;
+	z-index: 100;
+	position: absolute;
+	bottom: 0%;
+	bottom: 60px;
+	right: 0%;
+	left: 40%;
+	color: #db7200;
+	font-size: 20px;
+}
 #batimentg{
 	position: absolute;
 	z-index: 10;
@@ -377,6 +413,20 @@ height: 100%;
 
 
 /**----------4----------**/
+#ch4 {
+	font-family:'Gabriela', serif;
+	width: 40%;
+	line-height: 1.4;
+	z-index: 100;
+	position: absolute;
+	bottom: 0%;
+	bottom: 60px;
+	right: 0%;
+	left: 20px;
+	color: #db7200;
+	font-size: 20px;
+}
+
 #corbeille{ 
 	width: 27%;
 	position: absolute;
@@ -407,7 +457,7 @@ height: 100%;
 
 #pere4 {
 	position: absolute;
-	right: 20%;
+	right: -9%;
 	bottom:0%;
 	z-index: 90;
 	height: 90%
@@ -422,11 +472,17 @@ height: 100%;
 }
 
 /*input {display: none;}*/
+label[for=pain_anim] {cursor: pointer;}
+input#pain_anim {display: none;}
 
-input:checked~#pain_anim   {
+input#pain_anim:checked ~ #all2 a img#pere4   {
 
-	-webkit-animation:orange1 3.5s  linear;
+	-webkit-animation:orange5 3.5s  linear;
+	-webkit-animation-fill-mode:both;
 }
+
+
+
 /**----------5----------**/
 
 #murg{
@@ -445,6 +501,7 @@ input:checked~#pain_anim   {
 	-webkit-transform-origin:30% 70%;
 	-webkit-animation-fill-mode:both;
 	z-index: 90;
+	padding-bottom: -10px;
 }
 
 #murd{
@@ -499,7 +556,19 @@ input:checked~#pain_anim   {
 
 	
 }
-
+#ch5 {
+	font-family:'Gabriela', serif;
+	width: 40%;
+	line-height: 1.4;
+	z-index: 100;
+	position: absolute;
+	bottom: 0%;
+	bottom: 60px;
+	right: 0%;
+	right: 20px;
+	color: #db7200;
+	font-size: 20px;
+}
 /**----------footer----------**/
 
 footer {
@@ -509,7 +578,7 @@ height: 40px;
 border-top: 1px solid ‪white;
 position: absolute;
 bottom: 0;
-background-color: rgba(245, 162, 56, 0.3);
+background-color: rgba(245, 162, 56, 0.5);
 
 }
 
