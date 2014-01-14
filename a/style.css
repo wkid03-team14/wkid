@@ -106,6 +106,34 @@ height: 100%;
     100% {
         opacity: 0.5;}
 		}
+
+@-webkit-keyframes textegauche {
+    0% {-webkit-transform:translateX(-390px)}
+    100% {-webkit-transform:translateX(0px)}
+}
+
+@-webkit-keyframes textegauche2 {
+    0% {-webkit-transform:translateX(-420px)}
+    100% {-webkit-transform:translateX(0px)}
+}
+
+@-webkit-keyframes textegauche3 {
+    0% {-webkit-transform:translateX(-420px)}
+    55% {-webkit-transform:translateX(380px)}
+	65% {-webkit-transform:translateX(360px)}
+	75% {-webkit-transform:translateX(380px)}
+    100% {-webkit-transform:translateX(350px)}
+}
+
+@-webkit-keyframes textedroit {
+    0% {-webkit-transform:translateX(620px)}
+    100% {-webkit-transform:translateX(0px)}
+}
+@-webkit-keyframes textegauche5 {
+    0% {-webkit-transform:translateX(360px)}
+    100% {-webkit-transform:translateX(0px)}
+}
+
 p {
 	font-family: 'Raleway', sans-serif;
 	line-height: 1.4;
@@ -205,6 +233,9 @@ body {overflow: hidden;}
 	bottom: 0%;
 	bottom: 60px;
 	margin-left: 20px;
+	-webkit-animation:textegauche 1.5s 1.2s ease-out;
+	-webkit-animation-fill-mode:both;
+
 }
 /**----------2----------**/
 #ch2 {
@@ -213,6 +244,8 @@ body {overflow: hidden;}
 	bottom: 0%;
 	bottom: 60px;
 	margin-left: 20px;
+	-webkit-animation:textegauche2 1.5s 1.2s ease-out;
+	-webkit-animation-fill-mode:both;
 }
 
 #middle {
@@ -338,6 +371,8 @@ body {overflow: hidden;}
 	bottom: 0%;
 	bottom: 60px;
 	left: 40%;
+	-webkit-animation:textedroit 1.5s 1.2s ease-out;
+	-webkit-animation-fill-mode:both;
 }
 #batimentg{
 	position: absolute;
@@ -455,7 +490,8 @@ body {overflow: hidden;}
 	top: 1%;
 	left: 60%;
 	width: 9%;
-	-webkit-animation:pere3 3.5s  ease-out;
+	-webkit-animation:pere3 3.5s 2s ease-out;
+		-webkit-animation-fill-mode:both;
 }
 
 
@@ -467,6 +503,9 @@ body {overflow: hidden;}
 	bottom: 100px;
 	right: 0%;
 	left: 20px;
+	-webkit-animation:textegauche3 1.7s 0.5s ease-out;
+	-webkit-animation-fill-mode:both;
+
 }
 
 #ch41 {
@@ -474,8 +513,7 @@ body {overflow: hidden;}
 	opacity: 0;
 	bottom: 50%;
 	bottom: 60px;
-	right: 50%;
-	left: 20px;
+	left: 36%;
 }
 #corbeille{ 
 	width: 27%;
@@ -528,7 +566,7 @@ input#pain_anim {display: none;}
 
 input#pain_anim:checked ~ #all2 a img#pere4   {
 
-	-webkit-animation:orange5 3.5s  linear;
+	-webkit-animation:orange5 1.5s  linear;
 	-webkit-animation-fill-mode:both;
 }
 
@@ -555,6 +593,8 @@ input#pain_anim:checked ~  #ch41   {
 	bottom: 0%;
 	bottom: 110px;
 	right: 0%;
+	-webkit-animation:textegauche5 1.5s 1.2s ease-out;
+	-webkit-animation-fill-mode:both;
 }
 #murg{
 	position: absolute;
