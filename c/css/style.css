@@ -104,11 +104,19 @@ footer img {
 /*-------------------------------page3---------------------------------------------*/
 
 #epicier1{
+    position: absolute;
+    top: 25%;
+    left: 30%;
 
 }
 #poupee2{
+    position: absolute;
+    right: 36.5%;
+    top: 67.5%;
 
 }
 #fille2{
-
+position: absolute;
+top: 60%;
+right: 30%;
 }
