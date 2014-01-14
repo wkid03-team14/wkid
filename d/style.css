@@ -14,13 +14,15 @@ main {
 #text_1 {
     position:absolute;
     top: 400px;
-    z-index: 2000;
+    z-index: 40;
     font-family: 'Gabriela', serif;
     width: 250px;
     font-size: 18px;
     line-height: 30px;
     top: 5%;
     left: 10%;
+    opacity: 0;
+    -webkit-transition: 0.7s;
 }
 
 #s1_fond_mur {
@@ -137,6 +139,23 @@ main {
 
 }
 
+#picto_1 img {
+    position: absolute;
+    z-index: 50;
+    top: 10%;
+    width: 200px;
+    left: 10%;
+    -webkit-transition: 0.7s;
+}
+
+#picto_1:hover img {
+    opacity: 0;
+}
+
+#picto_1:hover #text_1 {
+    opacity: 1;
+}
+
 /*---------------------------------------- CHAPITRE 2------------------------------------- */
 
 #s2_fond_mur {
@@ -147,6 +166,37 @@ main {
     position: absolute;
     top: 0;
     z-index: 10;
+}
+
+
+#text_2 {
+    position:absolute;
+    bottom: 100px;
+    z-index: 40;
+    font-family: 'Gabriela', serif;
+    width: 237px;
+    font-size: 18px;
+    line-height: 30px;
+    right: 25%;
+    opacity: 0;
+    -webkit-transition: 0.7s;
+}
+
+#picto_2 img {
+    position: absolute;
+    z-index: 50;
+    bottom: 150px;
+    width: 200px;
+    right: 28%;
+    -webkit-transition: 0.7s;
+}
+
+#picto_2:hover img {
+    opacity: 0;
+}
+
+#picto_2:hover #text_2 {
+    opacity: 1;
 }
     
 #magasin_2 {    
@@ -259,6 +309,19 @@ main {
 /*-------------------------------------------- CHAPITRE 3--------------------------------------- */
 
 
+#text_3 {
+    position:absolute;
+    top: 50px;
+    z-index: 40;
+    font-family: 'Gabriela', serif;
+    width: 237px;
+    font-size: 18px;
+    line-height: 30px;
+    right: 12%;
+    opacity: 0;
+    -webkit-transition: 0.7s;
+}
+
 @-webkit-keyframes epicier3 {
 0% {
     opacity: 0;
@@ -368,7 +431,55 @@ main {
     height: 80%;        
 }
 
+#picto_3 img {
+    position: absolute;
+    z-index: 50;
+    top: 80px;
+    width: 200px;
+    right: 15%;
+    -webkit-transition: 0.7s;
+}
+
+#picto_3:hover img {
+    opacity: 0;
+}
+
+#picto_3:hover #text_3 {
+    opacity: 1;
+}
 /*----------------------------------------- CHAPITRE 4 --------------------------------------*/
+
+
+#text_4 {
+    position:absolute;
+    top: 50px;
+    z-index: 40;
+    font-family: 'Gabriela', serif;
+    width: 237px;
+    font-size: 18px;
+    line-height: 30px;
+    right: 12%;
+    opacity: 0;
+    -webkit-transition: 0.7s;
+}
+
+#picto_4 img{
+    position: absolute;
+    z-index: 50;
+    top: 80px;
+    width: 200px;
+    right: 15%;
+    -webkit-transition: 0.7s;
+}
+
+#picto_4:hover img {
+    opacity: 0;
+}
+
+#picto_4:hover #text_4{
+    opacity: 1;
+}
+
 
 #magasin_4 {    
     z-index: 20;
@@ -459,7 +570,7 @@ main {
     z-index: 30;
     position: absolute;
     width: 10%;
-    top: 20%;
+    top: 35%;
     left: 70%;
 
 }
@@ -543,6 +654,38 @@ main {
 }
 
 /*-------------------------------------------- CHAPITRE 5 ----------------------------------------*/
+
+
+
+#text_5{
+    position:absolute;
+    top: 30px;
+    z-index: 40;
+    font-family: 'Gabriela', serif;
+    width: 237px;
+    font-size: 18px;
+    line-height: 30px;
+    right: 12%;
+    opacity: 0;
+    -webkit-transition: 0.7s;
+}
+
+#picto_5 img{
+    position: absolute;
+    z-index: 50;
+    top: 50px;
+    width: 200px;
+    right: 15%;
+    -webkit-transition: 0.7s;
+}
+
+#picto_5:hover img{
+    opacity: 0;
+}
+
+#picto_5:hover #text_5 {
+    opacity: 1;
+}
 
 #epicier_5 {    
     z-index: 30;
