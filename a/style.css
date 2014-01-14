@@ -51,6 +51,12 @@ height: 100%;
     100% {-webkit-transform:scale(1)}
 }
 
+
+@-webkit-keyframes batiment4 {
+    0% {-webkit-transform:scale(0.5)}
+    100% {-webkit-transform:scale(1)}
+}
+
 @-webkit-keyframes zoomfille {
     0% {-webkit-transform:scale(0.5) translate(-30%, -30%)}
     100% {-webkit-transform:scale(1) translate (0%)}
@@ -69,13 +75,45 @@ height: 100%;
 
 @-webkit-keyframes orange5 {
     0% {-webkit-transform:translateX(0px)}
-    100% {-webkit-transform:translateX(-360px)}
+    100% {-webkit-transform:translateX(-330px)}
+}
+
+@-webkit-keyframes texte {
+    0% {display:none; 
+        opacity: 0;
+    }
+
+    1% {display: block ; 
+        opacity: 0;
+    }
+
+    100% {display: block ; 
+        opacity: 1;}
+}
+
+@-webkit-keyframes gens {
+    0% {-webkit-transform:scale(0.5) }
+    100% {-webkit-transform:scale(1) }
 }
 
 
+@-webkit-keyframes reflet {
+    0% {opacity: 0.5;}
 
+     50% {opacity: 1;}
+		
 
-
+    100% {
+        opacity: 0.5;}
+		}
+p {
+	font-family: 'Raleway', sans-serif;
+	line-height: 1.4;
+	z-index: 100;
+	position: absolute;
+	color: #db7200;
+	font-size: 20px;
+}
 body {overflow: hidden;}
 
 #ville1 img {
@@ -136,7 +174,14 @@ body {overflow: hidden;}
 	z-index: 100;
 	-webkit-animation:orange1 1.5s  ease-out;
 }
+.lien :hover {-webkit-filter: contrast(1) brightness(0.8);
+-webkit-transition: all 0.5s ease-in-out; }
 
+.lien2 :hover {-webkit-filter: contrast(1) brightness(0.9) ;
+-webkit-transition: all 0.5s ease-in-out; }
+
+.lien3 :hover {-webkit-filter: contrast(1) brightness(0.9) ;
+-webkit-transition: all 0.5s ease-in-out; }
 
 #maison {
 	position: absolute;
@@ -156,29 +201,18 @@ body {overflow: hidden;}
 }
 
 #ch1{
-	font-family:'Gabriela', serif;
 	width: 35%;
-	line-height: 1.4;
-	z-index: 100;
-	position: absolute;
 	bottom: 0%;
 	bottom: 60px;
 	margin-left: 20px;
-	color: #db7200;
-	font-size: 20px;
 }
 /**----------2----------**/
 #ch2 {
-	font-family:'Gabriela', serif;
+	
 	width: 100%;
-	line-height: 1.4;
-	z-index: 100;
-	position: absolute;
 	bottom: 0%;
 	bottom: 60px;
 	margin-left: 20px;
-	color: #db7200;
-	font-size: 20px;
 }
 
 #middle {
@@ -254,7 +288,7 @@ body {overflow: hidden;}
 
 }
 
-#reflet {
+#reflet2 {
 	position: absolute;
 	z-index: 90;
 	top: 0;
@@ -263,6 +297,8 @@ body {overflow: hidden;}
 	width: 100%;
 	bottom: 0%;
 	pointer-events:none;
+	-webkit-animation:reflet 1s  ease-in;
+	-webkit-animation-fill-mode:both;
 
 }
 
@@ -298,17 +334,10 @@ body {overflow: hidden;}
 /**----------3----------**/
 
 #ch3 {
-	font-family:'Gabriela', serif;
 	width: 40%;
-	line-height: 1.4;
-	z-index: 100;
-	position: absolute;
 	bottom: 0%;
 	bottom: 60px;
-	right: 0%;
 	left: 40%;
-	color: #db7200;
-	font-size: 20px;
 }
 #batimentg{
 	position: absolute;
@@ -317,7 +346,7 @@ body {overflow: hidden;}
 	left: 0%;
 	height: 67%;
 	bottom: 85px;
-	-webkit-animation:zoom 1.5s  linear;
+	-webkit-animation:zoom 1.5s  ease-out;
 	-webkit-transform-origin:left top;
 	
 }
@@ -328,6 +357,9 @@ body {overflow: hidden;}
 	top: 0%;
 	right: 0%;
 	width: 27%;
+	-webkit-animation:batiment4 1.5s  ease-out;
+
+	-webkit-transform-origin:right top;
 }
 
 
@@ -337,6 +369,9 @@ body {overflow: hidden;}
 	top: 0%;
 	left: 39%;
 	width: 15%;
+	-webkit-animation:gens 1.5s  ease-out;
+
+	-webkit-transform-origin:left top;
 }
 
 #p2{
@@ -346,6 +381,9 @@ body {overflow: hidden;}
 	left: 51%;
 	width: 15%;
 	pointer-events:none;
+	-webkit-animation:gens 1.5s  ease-out;
+
+	-webkit-transform-origin:left top;
 }
 
 #p3{
@@ -355,6 +393,9 @@ body {overflow: hidden;}
 	left: 65%;
 	width: 10%;
 	pointer-events:none;
+	-webkit-animation:gens 1.5s  ease-out;
+
+	-webkit-transform-origin:left top;
 }
 
 
@@ -365,6 +406,9 @@ body {overflow: hidden;}
 	top: 0%;
 	left: 68%;
 	width: 20%;
+	-webkit-animation:gens 1.5s  ease-out;
+
+	-webkit-transform-origin:left top;
 }
 
 
@@ -374,6 +418,9 @@ body {overflow: hidden;}
 	top: 0%;
 	left: 84%;
 	width: 15%;
+	-webkit-animation:gens 1.5s  ease-out;
+
+	-webkit-transform-origin:left top;
 }
 
 
@@ -384,7 +431,7 @@ body {overflow: hidden;}
 	left: 5%;
 	width: 33%;
 	bottom: 85px;
-	-webkit-animation:zoomfille 1.5s  linear;
+	-webkit-animation:zoomfille 1.5s  ease-out;
 	-webkit-transform-origin:left top;
 }
 
@@ -394,7 +441,7 @@ body {overflow: hidden;}
 	bottom: 26%;
 	left: 18%;
 	width: 9%;
-	-webkit-animation:zoompoupee 1.5s  linear;
+	-webkit-animation:zoompoupee 1.5s  ease-out;
 
 	-webkit-transform-origin:left top;
 	
@@ -408,25 +455,28 @@ body {overflow: hidden;}
 	top: 1%;
 	left: 60%;
 	width: 9%;
-	-webkit-animation:pere3 3.5s  linear;
+	-webkit-animation:pere3 3.5s  ease-out;
 }
 
 
 /**----------4----------**/
 #ch4 {
-	font-family:'Gabriela', serif;
+	
 	width: 40%;
-	line-height: 1.4;
-	z-index: 100;
-	position: absolute;
 	bottom: 0%;
-	bottom: 60px;
+	bottom: 100px;
 	right: 0%;
 	left: 20px;
-	color: #db7200;
-	font-size: 20px;
 }
 
+#ch41 {
+	
+	opacity: 0;
+	bottom: 50%;
+	bottom: 60px;
+	right: 50%;
+	left: 20px;
+}
 #corbeille{ 
 	width: 27%;
 	position: absolute;
@@ -434,6 +484,8 @@ body {overflow: hidden;}
 	right: 0%;
 }
 
+#corbeille:hover {-webkit-filter: brightness(1.2);
+z-index: 100;}
 #bac {
 	position: absolute;
 	z-index: 120;
@@ -471,7 +523,6 @@ body {overflow: hidden;}
 	z-index: 70;
 }
 
-/*input {display: none;}*/
 label[for=pain_anim] {cursor: pointer;}
 input#pain_anim {display: none;}
 
@@ -481,10 +532,30 @@ input#pain_anim:checked ~ #all2 a img#pere4   {
 	-webkit-animation-fill-mode:both;
 }
 
+input#pain_anim:checked ~  #ch41   {
 
+	-webkit-animation:texte 3.5s  linear;
+	-webkit-animation-fill-mode:both;
+}
+#reflet {
+	position: absolute;
+	z-index: 90;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	bottom: 0%;
+	pointer-events:none;
+	
 
+}
 /**----------5----------**/
-
+#ch5 {
+	width: 35%;
+	bottom: 0%;
+	bottom: 110px;
+	right: 0%;
+}
 #murg{
 	position: absolute;
 	z-index: 10;
@@ -556,19 +627,7 @@ input#pain_anim:checked ~ #all2 a img#pere4   {
 
 	
 }
-#ch5 {
-	font-family:'Gabriela', serif;
-	width: 40%;
-	line-height: 1.4;
-	z-index: 100;
-	position: absolute;
-	bottom: 0%;
-	bottom: 60px;
-	right: 0%;
-	right: 20px;
-	color: #db7200;
-	font-size: 20px;
-}
+
 /**----------footer----------**/
 
 footer {
