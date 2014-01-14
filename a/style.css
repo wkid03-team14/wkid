@@ -421,11 +421,11 @@ height: 100%;
 	z-index: 70;
 }
 
-input {display: none;}
+/*input {display: none;}*/
 
-input:checked   {
+input:checked~#pain_anim   {
 
-	-webkit-animation:pere3 3.5s  linear;
+	-webkit-animation:orange1 3.5s  linear;
 }
 /**----------5----------**/
 
