@@ -119,7 +119,7 @@ right: 20px;}
     position: absolute;
     right: 36.5%;
     top: 67.5%;
-    z-index: 5;
+    z-index:5;
 
 }
 #fille2{
@@ -152,3 +152,24 @@ right: 30%;
     right: 30%;
 }
 /*-------------------------------page5---------------------------------------------*/
+
+#bras{
+    position: absolute;
+    bottom: -4%;
+    left:5%;
+    z-index:5
+}
+#pouce{
+    position: absolute;
+    bottom: 28%;
+    left: 16.5%;
+    z-index: 7;
+}
+
+#fille4{
+    position: absolute;
+    bottom:-6%;
+    left: 17%;
+    z-index: 6;
+}
+
