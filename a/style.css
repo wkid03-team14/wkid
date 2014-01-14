@@ -8,8 +8,8 @@ height: 100%;
 }
 /*ANIMATIONS*/
 @-webkit-keyframes maison1 {
-    0% {-webkit-transform:translateX(-200px)}
-    100% {-webkit-transform:translateX(0px)}
+    0% {-webkit-transform:translateX(-200%)}
+    100% {-webkit-transform:translateX(0%)}
 }
 
 @-webkit-keyframes orange1 {
@@ -18,10 +18,9 @@ height: 100%;
 }
 
 
-
 @-webkit-keyframes ville1 {
-    0% {-webkit-transform:translateX(10px)}
-    100% {-webkit-transform:translateX(0px)}
+    0% {-webkit-transform:translateX(10%)}
+    100% {-webkit-transform:translateX(0%)}
 }
 @-webkit-keyframes ville2 {
     0% {-webkit-transform:translateX(-10px)}
@@ -29,20 +28,42 @@ height: 100%;
 }
 
 @-webkit-keyframes fille2 {
-    0% {-webkit-transform:translateX(-30px)}
-    100% {-webkit-transform:translateX(0px)}
+    0% {-webkit-transform:translateX(-70%)}
+    100% {-webkit-transform:translateX(0%)}
 }
 
 
+@-webkit-keyframes pere3 {
+    0% {display:none; 
+        opacity: 0;
+    }
 
+    51% {display: block ; 
+        opacity: 0;
+    }
 
-@-webkit-keyframes orange2 {
-    0% {-webkit-transform:translateX(-75px)}
-    100% {-webkit-transform:translateX(0px)}
+    100% {display: block ; 
+        opacity: 1;}
 }
 
+@-webkit-keyframes zoom {
+    0% {-webkit-transform:scale(0.5)}
+    100% {-webkit-transform:scale(1)}
+}
 
+@-webkit-keyframes zoomfille {
+    0% {-webkit-transform:scale(0.5) translate(-30%, -30%)}
+    100% {-webkit-transform:scale(1) translate (0%)}
+}
+@-webkit-keyframes zoompoupee {
+    0% {-webkit-transform:scale(0.5) translate(-240%, -290%)}
+    100% {-webkit-transform:scale(1) translate (0%)}
+}
 
+@-webkit-keyframes mains {
+    0% {-webkit-transform:scale(0.8) translateX(-100px) translateY(80px)}
+    100% {-webkit-transform:scale(1) translateX(-100px) translateY(80px)}
+}
 
 
 
@@ -101,7 +122,7 @@ height: 100%;
 	bottom: 0%;
 	right: 0%;
 	z-index: 90;
-	bottom: 70px;}
+	bottom: 40px;}
 
 #morceau {
 	width: 16%;
@@ -180,7 +201,7 @@ height: 100%;
 	bottom:0%;
 	left: 10%;
 	z-index: 70;
-	-webkit-animation:fille2 1.5s  ease-out;
+	-webkit-animation:fille2 3s  ease-out;
 }
 
 #fille {
@@ -260,6 +281,9 @@ height: 100%;
 	left: 0%;
 	height: 67%;
 	bottom: 85px;
+	-webkit-animation:zoom 1.5s  linear;
+	-webkit-transform-origin:left top;
+	
 }
 
 #batimentd{
@@ -324,6 +348,8 @@ height: 100%;
 	left: 5%;
 	width: 33%;
 	bottom: 85px;
+	-webkit-animation:zoomfille 1.5s  linear;
+	-webkit-transform-origin:left top;
 }
 
 #poupee3{
@@ -332,6 +358,11 @@ height: 100%;
 	bottom: 26%;
 	left: 18%;
 	width: 9%;
+	-webkit-animation:zoompoupee 1.5s  linear;
+
+	-webkit-transform-origin:left top;
+	
+	
 }
 
 
@@ -341,6 +372,7 @@ height: 100%;
 	top: 1%;
 	left: 60%;
 	width: 9%;
+	-webkit-animation:pere3 3.5s  linear;
 }
 
 
@@ -358,7 +390,7 @@ height: 100%;
 	right: 0%;
 	bottom: 0%;
 	width: 90%;
-	bottom: 70px;
+	bottom: 40px;
 }
 
 #pain {
@@ -368,7 +400,7 @@ height: 100%;
 	bottom: 0%;
 	margin-bottom: 73%;
 	width: 100%;
-	bottom: 70px;
+	bottom: 40px;
 
 }
 
@@ -378,6 +410,22 @@ height: 100%;
 	right: 20%;
 	bottom:0%;
 	z-index: 90;
+	height: 90%
+}
+
+#groupe4 {
+	width: 15%;
+	position: absolute;
+	bottom:0%;
+	left: 10%;
+	z-index: 70;
+}
+
+input {display: none;}
+
+input:checked   {
+
+	-webkit-animation:pere3 3.5s  linear;
 }
 /**----------5----------**/
 
@@ -392,7 +440,11 @@ height: 100%;
 #bras {	width: 100%;
 	position: absolute;
 	bottom: 0%;
-	left: 0%;
+	right: 0%;
+	-webkit-animation:mains 1.5s  ease-out;
+	-webkit-transform-origin:30% 70%;
+	-webkit-animation-fill-mode:both;
+	z-index: 90;
 }
 
 #murd{
@@ -409,6 +461,7 @@ height: 100%;
 	bottom: 70px;
 	left: 0%;
 	width: 90%;
+
 }
 
 #poupee5{
@@ -450,27 +503,30 @@ height: 100%;
 /**----------footer----------**/
 
 footer {
-    width: 100%;
-    height: 70px;
-    background: orange;
-    position: absolute;
-    bottom: 0;
-    z-index: 101;
+z-index: 100;
+width: 100%;
+height: 40px;
+border-top: 1px solid ‪white;
+position: absolute;
+bottom: 0;
+background-color: rgba(245, 162, 56, 0.3);
+
 }
 
 footer h1 {
-    font-size: 36px;
-    font-family: 'Gabriela', serif;
-    color: white;
-    position: absolute;
-    top: 50%;
-    margin-top: -18px;
-    left: 20px;
+font-size: 25px;
+font-family: 'Gabriela', serif;
+color: white;
+position: absolute;
+top: 50%;
+margin-top: -10px;
+left: 20px;
 
 }
 
 footer img {
-    position: absolute;
-    bottom: 15px;
-    right: 20px;
+position: absolute;
+width:6%;
+bottom: 10px;
+right: 20px;
 }
