@@ -52,11 +52,11 @@ margin-top:5%;
 	-webkit-transition: all 1s ease-in-out;	
 
 }
-
 .fonce {
-	-webkit-filter:brightness(1);
+	-webkit-filter:contrast(1);
 	-webkit-transition: all 1s ease-in-out;	
 }
+
 .fonce:hover {-webkit-filter:contrast(1.6);
 -webkit-transition-duration: 1s;
 -webkit-transition-timing-function:ease-in-out;
