@@ -113,6 +113,7 @@ footer img {
     position: absolute;
     right: 36.5%;
     top: 67.5%;
+    z-index: 5;
 
 }
 #fille2{
