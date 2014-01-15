@@ -166,6 +166,44 @@ main {
     opacity: 1;
 }
 
+/*-------------------- Clavier --------------------------*/
+
+@-webkit-keyframes ok {
+0% {-webkit-transform:translateX(0);}
+50%{-webkit-transform:translateX(100px);}
+100%{-webkit-transform:translateX(350px);}
+}
+
+label {
+	background-color: white;
+	position: absolute;
+	top:70%;
+	z-index:100;
+	left:40%;
+	padding:10px 30px;
+	font-family: 'Poiret One', cursive;}
+
+input {
+	display: none;
+}
+
+#clavier {
+	position: absolute;
+	top: 55%;
+	left: 67%;
+	z-index: 1000;
+	background-color: #733E7C;
+	padding: 3%;
+	padding-bottom: 8%;
+	border: solid 4px white;
+	width: 50%;
+}
+
+input:checked~#clavier{
+	-webkit-animation: ok 0.4s 0.1s linear;
+	-webkit-animation-fill-mode:both;
+}
+
 /*---------------------------------------- CHAPITRE 2------------------------------------- */
 
 #s2_fond_mur {
@@ -831,6 +869,30 @@ bottom: 20%;
 right: 20px;
 }
 
+input:checked ~ #clavier {
+    -webkit-animation-name: ok;
+    -webkit-animation-duration: 0.4s;
+    -webkit-animation-delay:.1s;
+    -webkit-animation-timing-function:linear;
+    -webkit-animation-fill-mode:both;
+}
+
+@-webkit-keyframes ok {
+0% {-webkit-transform:translateX(0);}
+50%{-webkit-transform:translateX(100px);}
+100%{-webkit-transform:translateX(350px);}
+}
+
+label {
+    background-color: white;
+    position: absolute;
+    top:70%;
+    z-index:100;
+    left:40%;
+    padding:10px 30px;
+    font-family: 'Poiret One', cursive;
+
+}
 
     
     

@@ -191,6 +191,10 @@ right: 20px;
     -webkit-animation-fill-mode:backwards;
     }
 
+‪
+
+
+
    
 
 
@@ -275,4 +279,43 @@ right: 30%;
     top: 63%;
     right: 15%;
 
+}
+
+
+
+/*----------------------------panneau de commande---------------------------------*/
+@-webkit-keyframes ok {
+0% {-webkit-transform:translateX(0);}
+50%{-webkit-transform:translateX(100px);}
+100%{-webkit-transform:translateX(350px);}
+}
+
+label {
+    background-color: white;
+    position: absolute;
+    top:70%;
+    z-index:100;
+    left:40%;
+    padding:10px 30px;
+    font-family: 'Poiret One', cursive;}
+
+input {
+    display: none;
+}
+
+#clavier {
+    position: absolute;
+    top: 55%;
+    left: 67%;
+    z-index: 1000;
+    background-color: #990000;
+    padding: 3%;
+    padding-bottom: 8%;
+    border: solid 4px white;
+    width: 50%;
+}
+
+input:checked~#clavier{
+    -webkit-animation: ok 0.4s 0.1s linear;
+    -webkit-animation-fill-mode:both;
 }
