@@ -1,3 +1,31 @@
+footer {
+z-index: 100;
+width: 100%;
+height: 35px;
+background-color: rgba(245, 162, 56, 0.5);
+border-top: 1px solid ‪#A3BECC;
+position: absolute;
+bottom: 0;
+}
+
+footer h1 {
+font-size: 18px;
+font-family: 'Gabriela', serif;
+color: white;
+position: absolute;
+top: 50%;
+margin-top: -10px;
+left: 20px;
+
+}
+
+footer img {
+position: absolute;
+width:60px;
+bottom: 20%;
+right: 20px;
+}
+
 html{ 
 height: 100%; 
 -webkit-transform:translate3D(0,0,0);
@@ -46,7 +74,11 @@ height: 100%;
 }
 
 
-
+@-webkit-keyframes ok {
+0% {-webkit-transform:translateX(0);}
+50%{-webkit-transform:translateX(100px);}
+100%{-webkit-transform:translateX(350px);}
+}
 
 
 
@@ -110,6 +142,7 @@ body {overflow: hidden;}
 	width: 75%;
 	-webkit-animation:ville2 1.5s  ease-out;
 }
+
 #caisse {
 	width: 100%;
 	position: absolute;
@@ -162,6 +195,15 @@ body {overflow: hidden;}
 	-webkit-animation:maison1 1.5s  ease-out;
 }
 
+label {
+	background-color: white;
+	position: absolute;
+	top:70%;
+	z-index:100;
+	left:40%;
+	padding:10px 30px;
+	font-family: 'Poiret One', cursive;}
+
 #ch1{
 	width: 35%;
 	bottom: 0%;
@@ -172,80 +214,26 @@ body {overflow: hidden;}
 
 }
 
-
-
-
-
-
-
-‪#clavier {position: absolute;
-top:55%;
-left:67%;
-z-index: 100000;
-background-color: #263034;
-padding:3%;
-padding-bottom:8%;
-border:solid 4px white;
-width: 50%;
+input {
+	display: none;
 }
 
-input {display: none;}
-input:checked ~ #clavier {-webkit-animation-name: ok;
--webkit-animation-duration: 0.4s;
--webkit-animation-delay:.1s;
--webkit-animation-timing-function:linear;
--webkit-animation-fill-mode:both;
-}
-
-@-webkit-keyframes ok {
-0% {-webkit-transform:translateX(0);}
-50%{-webkit-transform:translateX(100px);}
-100%{-webkit-transform:translateX(350px);}
-}
-
-label {background-color: white;
-position: absolute;
-top:70%;
-z-index:100;
-left:40%;
-padding:10px 30px;
-font-family: 'Poiret One', cursive;
-
+#clavier {
+	position: absolute;
+	top: 55%;
+	left: 67%;
+	z-index: 1000;
+	background-color: #e27905;
+	padding: 3%;
+	padding-bottom: 8%;
+	border: solid 4px white;
+	width: 50%;
 }
 
 
-
-
-
-
-/**----------footer----------**/
-
-
-
-footer {
-z-index: 100;
-width: 100%;
-height: 35px;
-background-color: rgba(245, 162, 56, 0.5);
-border-top: 1px solid ‪#‎A3BECC‬;
-position: absolute;
-bottom: 0;
+input:checked~#clavier{
+	-webkit-animation: ok 0.4s 0.1s linear;
+	-webkit-animation-fill-mode:both;
 }
+‪
 
-footer h1 {
-font-size: 18px;
-font-family: 'Gabriela', serif;
-color: white;
-position: absolute;
-top: 50%;
-margin-top: -10px;
-left: 20px;
-
-}
-
-footer img {
-position: absolute;
-width:60px;
-bottom: 20%;
-right: 20px;
-}
