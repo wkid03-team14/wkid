@@ -67,8 +67,8 @@ height: 100%;
 }
 
 @-webkit-keyframes mains {
-    0% {-webkit-transform:scale(0.8) translateX(-100px) translateY(30px)}
-    100% {-webkit-transform:scale(1) translateX(-100px) translateY(30px)}
+    0% {-webkit-transform:scale(0.8) translateX(-100px) translateY(70px)}
+    100% {-webkit-transform:scale(1) translateX(-100px) translateY(70px)}
 }
 
 
@@ -134,6 +134,19 @@ height: 100%;
     100% {-webkit-transform:translateX(0px)}
 }
 
+@-webkit-keyframes bulle {
+    0% {display:none; 
+        opacity: 0;
+    }
+
+    1% {display: block ; 
+        opacity: 0;
+    }
+
+    100% {display: block ; 
+        opacity: 1;}
+}
+
 p {
 	font-family: 'Raleway', sans-serif;
 	line-height: 1.4;
@@ -142,6 +155,19 @@ p {
 	color: #db7200;
 	font-size: 20px;
 }
+
+p.grand {
+	font-size: 30px;
+	font-weight: 100;
+	-webkit-animation:textegauche 1.5s 1.2s ease-out;
+	-webkit-animation-fill-mode:both;
+	bottom: 0%;
+	bottom: 140px;
+	margin-left: 20px;
+}
+
+
+
 body {overflow: hidden;}
 
 #ville1 img {
@@ -183,6 +209,7 @@ body {overflow: hidden;}
 	position: absolute;
 	bottom: 0%;
 	right: 0%;
+	bottom: -5px;
 	-webkit-animation:orange1 1.5s  ease-out;}
 
 #orange {
@@ -200,6 +227,7 @@ body {overflow: hidden;}
 	right: 29.5%;
 	margin-bottom: 3.1%;
 	z-index: 100;
+	bottom: -5px;
 	-webkit-animation:orange1 1.5s  ease-out;
 }
 .lien :hover {-webkit-filter: contrast(1) brightness(0.8);
@@ -233,7 +261,7 @@ body {overflow: hidden;}
 	bottom: 0%;
 	bottom: 60px;
 	margin-left: 20px;
-	-webkit-animation:textegauche 1.5s 1.2s ease-out;
+	-webkit-animation:textegauche 1.5s 1.5s ease-out;
 	-webkit-animation-fill-mode:both;
 
 }
@@ -367,13 +395,41 @@ body {overflow: hidden;}
 /**----------3----------**/
 
 #ch3 {
-	width: 40%;
 	bottom: 0%;
-	bottom: 60px;
+	bottom: 110px;
 	left: 40%;
+	font-size: 40px;
 	-webkit-animation:textedroit 1.5s 1.2s ease-out;
 	-webkit-animation-fill-mode:both;
 }
+
+#ch3fille {
+	position: absolute;
+	bottom:85%;
+	left:8%;
+	-webkit-animation:bulle 1s 3.6s ease-out;
+	-webkit-animation-fill-mode:both;
+}
+
+#ch3suite {
+	width: 43%;
+	bottom: 0%;
+	bottom: 60px;
+	left: 40%;
+	font-size: 20px;
+	-webkit-animation:textedroit 1s 5s ease-out;
+	-webkit-animation-fill-mode:both;
+
+}
+#bulle {
+	position: absolute;
+	bottom:79%;
+	left:6.9%;
+	z-index: 100;
+	-webkit-animation:bulle 1s 3.6s ease-out;
+	-webkit-animation-fill-mode:both;
+}
+
 #batimentg{
 	position: absolute;
 	z-index: 10;
@@ -491,7 +547,7 @@ body {overflow: hidden;}
 	left: 60%;
 	width: 9%;
 	-webkit-animation:pere3 3.5s 2s ease-out;
-		-webkit-animation-fill-mode:both;
+	-webkit-animation-fill-mode:both;
 }
 
 
@@ -520,10 +576,13 @@ body {overflow: hidden;}
 	position: absolute;
 	bottom: 0%;
 	right: 0%;
+	bottom: -5px;
+
 }
 
 #corbeille:hover {-webkit-filter: brightness(1.2);
-z-index: 100;}
+z-index: 150;
+}
 #bac {
 	position: absolute;
 	z-index: 120;
@@ -531,6 +590,7 @@ z-index: 100;}
 	bottom: 0%;
 	width: 90%;
 	bottom: 40px;
+
 }
 
 #pain {
@@ -593,9 +653,23 @@ input#pain_anim:checked ~  #ch41   {
 	bottom: 0%;
 	bottom: 110px;
 	right: 0%;
-	-webkit-animation:textegauche5 1.5s 1.2s ease-out;
+	-webkit-animation:textegauche5 1.5s 1.5s ease-out;
 	-webkit-animation-fill-mode:both;
 }
+
+p.grand2 {
+	width: 35%;
+	bottom: 0%;
+	bottom: 140px;
+	right: 0%;
+	font-size: 30px;
+	font-weight: 100;
+	-webkit-animation:textegauche5 1.5s 1.2s ease-out;
+	-webkit-animation-fill-mode:both;
+	
+	
+}
+
 #murg{
 	position: absolute;
 	z-index: 10;
@@ -612,7 +686,7 @@ input#pain_anim:checked ~  #ch41   {
 	-webkit-transform-origin:30% 70%;
 	-webkit-animation-fill-mode:both;
 	z-index: 90;
-	padding-bottom: -10px;
+	
 }
 
 #murd{
@@ -670,19 +744,20 @@ input#pain_anim:checked ~  #ch41   {
 
 /**----------footer----------**/
 
+
+
 footer {
 z-index: 100;
 width: 100%;
-height: 40px;
-border-top: 1px solid ‪white;
+height: 35px;
+background-color: rgba(245, 162, 56, 0.5);
+border-top: 1px solid ‪#‎A3BECC‬;
 position: absolute;
 bottom: 0;
-background-color: rgba(245, 162, 56, 0.5);
-
 }
 
 footer h1 {
-font-size: 25px;
+font-size: 18px;
 font-family: 'Gabriela', serif;
 color: white;
 position: absolute;
@@ -694,7 +769,7 @@ left: 20px;
 
 footer img {
 position: absolute;
-width:6%;
-bottom: 10px;
+width:60px;
+bottom: 20%;
 right: 20px;
 }
