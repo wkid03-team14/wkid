@@ -67,6 +67,14 @@ right: 20px;}
     top:42%;
     right: 12.3%;
 }
+.fonce img {
+    -webkit-filter:contrast(1);
+    -webkit-transition: all 0.5s ease-in-out;   
+}
+
+.fonce:hover img {-webkit-filter:contrast(1.6);
+-webkit-transition-timing-function:ease-in-out;
+}
 #fille1{
     position: absolute;
     z-index: 10;
@@ -155,21 +163,29 @@ right: 30%;
 
 #bras{
     position: absolute;
-    bottom: -4%;
+    bottom: -6%;
     left:5%;
-    z-index:5
-}
-#pouce{
-    position: absolute;
-    bottom: 28%;
-    left: 16.5%;
-    z-index: 7;
+    z-index:7
 }
 
 #fille4{
     position: absolute;
-    bottom:-6%;
-    left: 17%;
+    bottom:-7%;
+    left: 24%;
     z-index: 6;
 }
 
+#epicier3{
+    position: absolute;
+    top: 35%;
+    right: 20%;
+
+
+}
+
+#poupee4{
+    position: absolute;
+    top: 63%;
+    right: 15%;
+
+}
