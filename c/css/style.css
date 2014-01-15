@@ -162,7 +162,7 @@ right: 20px;
     0% {-webkit-transform:translateX(-500px);}
     50%{-webkit-transform:translateX(-250px);}
     100%{-webkit-transform:translateX(0px);}
-}
+    }
 .ours{
     position: absolute;
     top: 40%;
@@ -191,24 +191,9 @@ right: 20px;
     -webkit-animation-fill-mode:backwards;
     }
 
-‪
-
-
-
-   
-
-
-/*-------------------------------page2---------------------------------------------*/
-
-
-
-
-
-
-
 /*-------------------------------page3---------------------------------------------*/
 
-#epicier1{
+#epicier{
     position: absolute;
     top: 26%;
     left: 30%;
