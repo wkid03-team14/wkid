@@ -139,16 +139,11 @@ right: 20px;
 }
 
 #poing img:hover{
-    -webkit-transform:translateY(-20px);
+    -webkit-transform:translateY(-170px) translateX(-200px);
 }
+    
 
-#poing a:active #frappe{
 
-}
-
-@-webkit-keyframes frappe{
-    0% {-webkit-transform:translateY();}
-}
 
 .lit{
     position: absolute;
