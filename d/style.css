@@ -9,6 +9,16 @@ main {
     height: 100%;
 }
 
+.fonce:hover img {
+    -webkit-filter:contrast(1.6);
+    -webkit-transition-timing-function:ease-in-out;
+}
+
+.couleur:hover img {
+    -webkit-filter:brightness(1.6);
+    -webkit-transition-timing-function:ease-in-out;
+}
+
 /*----------------------------------------- CHAPITRE 1---------------------------------------- */
 
 #text_1 {
