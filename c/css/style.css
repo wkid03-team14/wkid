@@ -147,7 +147,7 @@ right: 20px;
 }
 
 @-webkit-keyframes frappe{
-    0% {-webkit-transform:translateY;}
+    0% {-webkit-transform:translateY();}
 }
 
 .lit{
