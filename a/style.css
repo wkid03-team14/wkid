@@ -126,12 +126,12 @@ height: 100%;
 }
 
 @-webkit-keyframes textedroit {
-    0% {-webkit-transform:translateX(620px)}
+    0% {-webkit-transform:translateX(865px)}
     100% {-webkit-transform:translateX(0px)}
 }
 @-webkit-keyframes textegauche5 {
-    0% {-webkit-transform:translateX(360px)}
-    100% {-webkit-transform:translateX(0px)}
+    0% {-webkit-transform:translateX(100%)}
+    100% {-webkit-transform:translateX(0%)}
 }
 
 @-webkit-keyframes bulle {
@@ -405,7 +405,7 @@ body {overflow: hidden;}
 
 #ch3fille {
 	position: absolute;
-	bottom:85%;
+	bottom:93%;
 	left:8%;
 	-webkit-animation:bulle 1s 3.6s ease-out;
 	-webkit-animation-fill-mode:both;
@@ -423,7 +423,7 @@ body {overflow: hidden;}
 }
 #bulle {
 	position: absolute;
-	bottom:79%;
+	bottom: 88%;
 	left:6.9%;
 	z-index: 100;
 	-webkit-animation:bulle 1s 3.6s ease-out;
