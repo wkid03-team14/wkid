@@ -86,3 +86,6 @@ font-family: 'Josefin Sans', sans-serif;
 font-size: 25px;
 z-index: 5;
 }
+
+a:hover {color:#D2691E;
+font-weight: 600;}

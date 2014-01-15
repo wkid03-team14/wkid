@@ -31,11 +31,11 @@ window.setTimeout("Conflaburator("+SomeNumberThing+")", 100);
 
 
 <script type="text/javascript">
-
                document.onkeydown = function(event){
                                 switch(event.keyCode)
                                 {
                                 
+
                                        case 38:
                                                 console.log("arrow up");
                                                  window.location.href="../index.html";
@@ -54,6 +54,19 @@ window.setTimeout("Conflaburator("+SomeNumberThing+")", 100);
                         
                 </script>        
 <main id="index">
+
+
+	<input type="checkbox" id="ok"/> 
+	
+
+
+	<div id="clavier">
+		<label for="ok">OK </label>
+	<img src="images/clavier.png" alt="touches clavier">
+	</div>
+
+
+
 	<div id="lit"><img src="images/lit.png" alt="lit" ></div>
 
 	<div id="poupon"><a class="fonce"href="../d/index.html"><img src="images/poupon.png" alt="poupée" ></a></div>
@@ -68,7 +81,9 @@ window.setTimeout("Conflaburator("+SomeNumberThing+")", 100);
 
 	<div id="transparent"></div>
 	<div id="transparent2"></div>
-	<div class="texte"><p> J'en ai marre que papa me frappe... Il crie tout le temps. Si on partait loin Yasmine ? Il ne nous retrouverait jamais.</p></div>
+
+
+	<div class="texte"><p> J'en ai marre que papa me frappe... <p id="grand">Il crie tout le temps.</p> Si on partait loin Yasmine ? Il ne nous retrouverait jamais.</p></div>
 
 </main>
 
