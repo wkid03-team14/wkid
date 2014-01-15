@@ -1,0 +1,13 @@
+
+main {display:block;
+background-image:url(img/fond.png);
+background-attachment: fixed; 
+background-position:center;  
+background-size:cover;
+position: relative;
+height:1050px;
+width:100%;
+overflow: hidden;}
+
+#photo {position: absolute;
+top:50%;}
