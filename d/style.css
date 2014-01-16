@@ -351,7 +351,22 @@ input:checked~#clavier{
 
 #chat_2 img {    
     width: 80%;
-    height: 80%;        
+    height: 80%;
+}
+
+#chat_2 #coeur_2 {
+    width: 15%;
+    height: 25%;
+    position: absolute;
+    top: 0;
+    left: -40px;
+    opacity: 0;
+    -webkit-transition: 0.7s;
+}
+
+#chat_2:hover #coeur_2{
+    opacity: 1;
+    
 }
 
 /*-------------------------------------------- CHAPITRE 3--------------------------------------- */

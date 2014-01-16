@@ -6,10 +6,27 @@ body {
 
 main {
     display: block;
-    height: 900px;
+    height: 1000px;
     background-color: #999999;
     margin-top: 40%;
+    padding: 10px;
 }
+
+h2 {
+    font-size: 16px;
+    font-family: sans-serif;
+    margin-top: 20px;
+    color: white;
+    margin-left: 180px;
+}
+
+#fleche img {
+    z-index: 30;
+    position: absolute;
+    width: 4%;
+    top:11%;
+    left: 1%;
+   }
 
 #machine img {
     z-index: 50;
@@ -259,6 +276,55 @@ main {
     top:27%;
     left: 55%;
 }
+
+#contenu_brieuc {
+    position: relative;
+    margin-left: 225px;
+    width: 500px;
+    margin-top: 20px;
+}
+
+.gif {
+    position: relative;
+    padding: 20px;
+
+}
+
+
+#contenu_maurine {
+    position: relative;
+    margin-left: 380px;
+    top: -2500px;
+}
+
+#contenu_sophie {
+    position: relative;
+    margin-left: 100px;
+    top: -1650px;
+}
+
+#contenu_vincent {
+    position: relative;
+    margin-left: 100px;
+    top: -730px;
+
+}
+
+section {
+    position:relative;
+    top:0;
+    opacity:0;
+    -webkit-transform:translateY (-10px);
+    
+}
+
+section:target {
+    opacity:1;
+    -webkit-transform:translateY (0)
+    transition:all .3s linear;
+    z-index:10;
+}
+
 
 footer {
 z-index: 100;
