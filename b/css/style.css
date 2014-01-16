@@ -134,8 +134,8 @@ input:checked  ~ #clavier {-webkit-animation-name: ok;
 
 @-webkit-keyframes ok {
 0% {-webkit-transform:translateX(0);}
-50%{-webkit-transform:translateX(100px);}
-100%{-webkit-transform:translateX(350px);}
+50%{-webkit-transform:translateX(400px);}
+100%{-webkit-transform:translateX(750px);}
 }
 
 
@@ -342,7 +342,7 @@ z-index: 35;
 }
 
 #papa {position: absolute;
-top:58%;
+top:35%;
 width:20%;
 left:75%;
 -webkit-animation-name:pere;
@@ -354,7 +354,7 @@ left:75%;
 
 @-webkit-keyframes pere {
 0% {-webkit-transform:translateX(300px);}
-100%{-webkit-transform:translateX(0px);}
+100%{-webkit-transform:translateX(10px);}
 }
 
 #perso1 {position: absolute;
