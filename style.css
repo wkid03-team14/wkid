@@ -89,3 +89,10 @@ z-index: 5;
 
 a:hover {color:#D2691E;
 font-weight: 600;}
+
+#choix {font-family: helvetica, sans-serif;
+left:15%;
+font-size: 14pt;
+position: absolute;
+bottom:5%;
+color:#B29518;}
