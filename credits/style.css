@@ -1,4 +1,6 @@
-
+#fleche {position: absolute;
+top:2%;
+left:2%;}
 
 main {height:1050px;}
 #photo {position: absolute;
