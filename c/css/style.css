@@ -63,6 +63,31 @@ right: 20px;
 -webkit-transition-timing-function:ease-in-out;
 }
 
+.texte {font-family: 'Poiret One', cursive;
+color:#36444D;
+font-size: 15pt;
+width:320px;
+line-height:1.4;
+position: absolute;
+left:3%;
+margin-right:5%;
+margin-top:5%;
+-webkit-animation-name: texte;
+-webkit-animation-duration: 0.5s;
+-webkit-animation-delay:3s;
+-webkit-animation-timing-function:linear;
+-webkit-animation-fill-mode:backwards;
+}
+
+@-webkit-keyframes texte {
+0% {-webkit-transform:translateX(-350px);}
+50%{-webkit-transform:translateX(-100px);}
+100%{-webkit-transform:translateX(0px);}
+}
+
+#grand {width:300px;
+font-size: 25pt;}
+
 /*-------------------------------index et des classes utilisées sur la page 2-------------------------------------------*/
 
 .meuble{ position: absolute;
